@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>App</title>
+</head>
+
+<body>
+    <div id="pagina-app">
+        <h1>Calculadora de Gordura Corporal</h1>
+        <input type="number" id="txtaltura" name="txtaltura" placeholder="Altura (cm)">
+        <input type="number" id="txtpeso" name="txtpeso" placeholder="Peso (kg)">
+        <input type="number" id="txtcintura" name="txtcintura" placeholder="Cintura (cm)">
+        <input type="number" id="txtidade" name="txtidade" placeholder="Idade (anos)">
+
+        <div id="genero">
+            <input type="radio" id="male" name="gender" value="Masculino" checked="true">
+            <label for="male">Masculino</label>
+            <input type="radio" id="female" name="gender" value="Feminino">
+            <label for="female">Feminino</label>
+        </div>
+
+        <input type="button" id="btResultado" value="Calcular" onclick="calcular()">
+        <h3 id="resultado"></h3>
+        <h3 id="resultado1"></h3>
+        <h3 id="resultado2"></h3>
+
+        <script src="main.js"></script>
+    </div>
+</body>
+
+</html>
